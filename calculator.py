@@ -5,7 +5,10 @@ root.title('Simple Calculator')
 e=  Entry(root, width=35 ,borderwidth=5)
 e.grid(row=0,column=0,columnspan=3, padx=10,pady=10)
 
-def clickAdd():
+def clickAdd(number):
+    e.insert(0,number)
+    number=e.get()
+    print(number)
     return
 button_7 = Button(root, text='7', padx=40,pady=20 ,command=lambda:clickAdd(7)).grid(row=1,column=0)
 button_8 = Button(root, text='8', padx=40,pady=20,command=lambda:clickAdd(8) ).grid(row=1,column=1)
