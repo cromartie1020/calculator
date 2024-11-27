@@ -30,6 +30,16 @@ def button_equal():
     e.insert(0,f_num+int(second_number))
     return        
 
+def button_substract():
+    return
+
+def button_multiply():
+    return
+
+def button_divide():
+    return
+
+
 button_7 = Button(root, text='7', padx=40,pady=20 ,command=lambda:clickAdd(7)).grid(row=1,column=0)
 button_8 = Button(root, text='8', padx=40,pady=20,command=lambda:clickAdd(8) ).grid(row=1,column=1)
 button_9 = Button(root, text='9', padx=40,pady=20,command=lambda:clickAdd(9) ).grid(row=1,column=2)
@@ -43,6 +53,10 @@ button_0 = Button(root, text='0', padx=40,pady=20,command=lambda:clickAdd(0) ).g
 button_add = Button(root, text='+', padx=40,pady=20,command=button_add).grid(row=5,column=0)
 button_clear = Button(root, text='Clear', padx=79,pady=20,command=button_clear ).grid(row=4,column=1,columnspan=2)
 button_equal = Button(root, text='=',padx=91,pady=20,command=button_equal).grid(row=5,column=1,columnspan=2)
+
+button_add = Button(root, text='+', padx=40,pady=20,command=button_substract).grid(row=5,column=0)
+button_add = Button(root, text='+', padx=40,pady=20,command=button_multiply).grid(row=5,column=0)
+button_add = Button(root, text='+', padx=40,pady=20,command=button_divide).grid(row=5,column=0)
 
 
 mainloop()
