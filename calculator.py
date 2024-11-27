@@ -13,6 +13,11 @@ def clickAdd(number):
     
     return
 def button_add():
+    first_number = e.get()
+    global f_num   
+    f_num=int(first_number)
+    e.delete(0,END)
+    
     return
 
 def button_clear():
@@ -20,6 +25,9 @@ def button_clear():
     return
 
 def button_equal():
+    second_number = e.get()
+    e.delete(0,END)
+    e.insert(0,f_num+int(second_number))
     return        
 
 button_7 = Button(root, text='7', padx=40,pady=20 ,command=lambda:clickAdd(7)).grid(row=1,column=0)
